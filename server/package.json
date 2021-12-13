@@ -1,21 +1,19 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": ".dist/main",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "babel --out-dir .dist/ src/",
-    "start": "node .dist/main",
-    "dev": "nodemon"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.16.0",
-    "@babel/node": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "nodemon": "^2.0.15"
-  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1",
+    "sequelize": "^6.12.0-beta.1"
   }
 }
